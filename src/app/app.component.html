@@ -1,1 +1,25 @@
 <app-libros></app-libros>
+
+
+<div class="container">
+  <div class="row my-5">
+    <div class="col-md-12 mt-5">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="text-center">Nombre</th>
+            <th class="text-center">Categoria</th>
+            <th class="text-center">Fecha de Creación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let l of libros">
+            <td class="text-center">{{l.nombreCategoria}}</td>
+            <td class="text-center">{{l.descripcion}}</td>
+            <td class="text-center">{{l.fechaIng}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
