@@ -7,16 +7,24 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th class="text-center">Nombre</th>
+            <th class="text-center">Titulo</th>
+            <th class="text-center">ISBN</th>
+            <th class="text-center">Autor</th>
             <th class="text-center">Categoria</th>
-            <th class="text-center">Fecha de Creación</th>
+            <th class="text-center">Fechade Publicación</th>
+            <th class="text-center">Editor</th>
+            <th class="text-center">Descripción</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let l of libros">
-            <td class="text-center">{{l.nombreCategoria}}</td>
+            <td class="text-center">{{l.titulo}}</td>
+            <td class="text-center">{{l.isbn}}</td>
+            <td class="text-center">{{l.autor}}</td>
+            <td class="text-center">{{l.categoria}}</td>
+            <td class="text-center">{{l.fechaPublicacion}}</td>
+            <td class="text-center">{{l.editor}}</td>
             <td class="text-center">{{l.descripcion}}</td>
-            <td class="text-center">{{l.fechaIng}}</td>
           </tr>
         </tbody>
       </table>

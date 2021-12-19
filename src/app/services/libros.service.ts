@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class LibrosService {
 
-  url:string = 'http://localhost:14552/api/Libro/GetTI_Categoria'
+  url:string = 'http://localhost:14552/api/Libro/GetBL_Libro'
   EX_url:string = 'https://jsonplaceholder.typicode.com/users'
   constructor(private http:HttpClient) {
     console.log('Ready')
